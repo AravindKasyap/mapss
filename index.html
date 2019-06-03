@@ -31,14 +31,14 @@ div#content {
             $.getJSON("https://api.thingspeak.com/channels/700950/fields/4/last.json?api_key=DRAPU37O2PP8V109", function(result){
         	
             var m = result;
-            x=Number(m.field3);
+            x=Number(m.field4);
                            //alert(x);
         });
         
             $.getJSON("https://api.thingspeak.com/channels/700950/fields/5/last.json?api_key=DRAPU37O2PP8V109", function(result){
         	
             var m = result;
-            y=Number(m.field4);
+            y=Number(m.field5);
                 
                 
         }).done(function() {
